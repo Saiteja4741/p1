@@ -1,12 +1,12 @@
 const cookieParser = require("cookie-parser")
 const express = require("express")
-const port = 3030
+const port = 3000
 
 const app = express()
 app.use(cookieParser())
 
 app.use('/set',(req,res)=>{
-    res.cookie("user", "Vishwa")
+    res.cookie("user", "teja")
     res.send("Cookie is setted")
 })
 
